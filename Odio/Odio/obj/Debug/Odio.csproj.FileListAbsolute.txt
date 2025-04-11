@@ -1,0 +1,7 @@
+C:\Users\bit\OneDrive\바탕 화면\Odio\Odio\bin\Debug\Odio.exe.config
+C:\Users\bit\OneDrive\바탕 화면\Odio\Odio\bin\Debug\Odio.exe
+C:\Users\bit\OneDrive\바탕 화면\Odio\Odio\bin\Debug\Odio.pdb
+C:\Users\bit\OneDrive\바탕 화면\Odio\Odio\obj\Debug\Odio.csproj.AssemblyReference.cache
+C:\Users\bit\OneDrive\바탕 화면\Odio\Odio\obj\Debug\Odio.csproj.CoreCompileInputs.cache
+C:\Users\bit\OneDrive\바탕 화면\Odio\Odio\obj\Debug\Odio.exe
+C:\Users\bit\OneDrive\바탕 화면\Odio\Odio\obj\Debug\Odio.pdb
