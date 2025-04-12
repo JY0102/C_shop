@@ -1,0 +1,93 @@
+var schedule = new Schedule();
+schedule.Data["홍길동"] = new Dictionary<string, List<string>>
+{
+    ["2025-04-10"] = new List<string> { "회의 참석", "팀 점심" },
+    ["2025-04-11"] = new List<string> { "프로젝트 마감", "운동" }
+};
+
+// JSON으로 변환
+string json = JsonSerializer.Serialize(schedule, new JsonSerializerOptions { WriteIndented = true });
+// schedule -> 변환하고싶은 객체
+// WriteIndented  -> 들여쓰기 
+File.WriteAllText("schedule.json", json);
+Console.WriteLine(json);
+
+
+----- json 저장 예시
+
+
+string readJson = File.ReadAllText("schedule.json");
+var loadedSchedule = JsonSerializer.Deserialize<Schedule>(readJson);
+
+// 예시 출력
+foreach (var person in loadedSchedule.Data)
+{
+    Console.WriteLine($"이름: {person.Key}");
+    foreach (var date in person.Value)
+    {
+        Console.WriteLine($"  날짜: {date.Key}");
+        foreach (var item in date.Value)
+        {
+            Console.WriteLine($"    내용: {item}");
+        }
+    }
+}
+
+
+
+
+-- json 읽기 예시
+
+
+->  json -> 직렬화 가능
+
+
+-- 이름 전체 뽑아오기
+
+public class Program
+{
+    public static void Main()
+    {
+        string json = @"{
+            ""Alice"": { ""2025-04-10"": [""Meeting"", ""Lunch""] },
+            ""Bob"": { ""2025-04-11"": [""Workout"", ""Dinner""] }
+        }";
+
+        using JsonDocument doc = JsonDocument.Parse(json);
+        JsonElement root = doc.RootElement;
+
+        // 루트는 { } 오브젝트니까, 그 안의 "이름"들을 순회할 수 있어
+        foreach (JsonProperty person in root.EnumerateObject())
+        {
+            Console.WriteLine($"이름: {person.Name}");
+        }
+    }
+}
+
+-- 특정 이름 뽑아오기
+
+if (root.TryGetProperty("Alice", out JsonElement aliceData))
+{
+    string aliceJson = aliceData.GetRawText();  -> 직렬화 -> send -> recv ->  Json 파싱
+}
+
+
+
+string aliceJson = aliceData.GetRawText();
+var aliceObject = JsonSerializer.Deserialize<Dictionary<string, List<string>>>(aliceJson);
+
+
+
+
+
+
+
+
+---------------- json 저장
+
+var data = new Dictionary<string, Schedule> { { id, schedule } };
+string json = JsonConvert.SerializeObject(data , Formatting.Indented);
+
+
+
+

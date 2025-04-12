@@ -1,0 +1,15 @@
+Task
+
+비동기 스레드??????
+
+
+
+public static async Task<string> UpdateJsonAsync(string id, Dictionary<string, Schedule> schedules)
+{
+    var data = new Dictionary<string, Schedule>() { { id , schedules[id] } };
+    string json = JsonConvert.SerializeObject(data, Formatting.Indented);
+
+    await Task.Run(() => WriteJson(schedules));  // 여기서 백그라운드로 저장 실행
+
+    return json;
+}
