@@ -1,9 +1,0 @@
-C:\Users\bit\Desktop\WPF\Riot\Riot\bin\Debug\Riot.dll
-C:\Users\bit\Desktop\WPF\Riot\Riot\bin\Debug\Riot.pdb
-C:\Users\bit\Desktop\WPF\Riot\Riot\bin\Debug\Newtonsoft.Json.dll
-C:\Users\bit\Desktop\WPF\Riot\Riot\bin\Debug\Newtonsoft.Json.xml
-C:\Users\bit\Desktop\WPF\Riot\Riot\obj\Debug\Riot.csproj.AssemblyReference.cache
-C:\Users\bit\Desktop\WPF\Riot\Riot\obj\Debug\Riot.csproj.CoreCompileInputs.cache
-C:\Users\bit\Desktop\WPF\Riot\Riot\obj\Debug\Riot.csproj.Up2Date
-C:\Users\bit\Desktop\WPF\Riot\Riot\obj\Debug\Riot.dll
-C:\Users\bit\Desktop\WPF\Riot\Riot\obj\Debug\Riot.pdb
