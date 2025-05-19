@@ -1,0 +1,409 @@
+﻿<UserControl x:Class="Riot_Search_Client.Controls.fow_info"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Riot_Search_Client.Converts"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="1034">
+    <UserControl.Resources>
+        <local:KdaConvert x:Key="kdaConvert"/>
+        <local:TimeConvert x:Key="timeConvert"/>
+        <local:WinConvert x:Key="winConvert"/>
+        <local:WinToStringConvert x:Key="winToStringConvert"/>
+        <local:ChampLevelConverter x:Key="champLevelConverter"/>
+        <local:TeamAssistsConverter x:Key="teamAssistsConverter"/>
+        <local:DamageConvert x:Key="damageConvert"/>
+        <local:TakenConvert x:Key="takenConvert"/>
+        <local:FirstBloodConvert x:Key="firstBloodConvert"/>
+        <local:LastConvert x:Key="lastConvert"/>
+    </UserControl.Resources>
+    <!-- 참가자 정보 패널 (기본적으로 숨김) -->
+    <Border x:Name="playerDetailsGrid" Height="Auto" Width ="1025" Visibility="Visible" Background="#F0F0F0" Margin="2" BorderBrush="Gray" BorderThickness="1">
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" MaxHeight="500">
+            <StackPanel Height="Auto">
+
+                <!-- 블루팀 총합 통계 -->
+                <Border Background="#E6F3FF" Margin="10,10,10,5" Padding="5" BorderBrush="Blue" BorderThickness="1">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0" HorizontalAlignment="Center">
+                            <TextBlock Text="팀 킬" FontSize="10" FontWeight="Bold"/>
+                            <TextBlock x:Name="blueTeamKills" Text="{Binding blueTeam.champion}" FontSize="14" FontWeight="Bold" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" HorizontalAlignment="Center">
+                            <TextBlock Text="팀 데스" FontSize="10" FontWeight="Bold"/>
+                            <TextBlock x:Name="blueTeamDeaths" Text="{Binding redTeam.champion}" FontSize="14" FontWeight="Bold" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="2" HorizontalAlignment="Center">
+                            <TextBlock Text="팀 어시스트" FontSize="10" FontWeight="Bold"/>
+                            <TextBlock x:Name="blueTeamAssists" Text="{Binding ., Converter={StaticResource teamAssistsConverter}, ConverterParameter=블루팀}" FontSize="14" FontWeight="Bold" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="3" HorizontalAlignment="Center">
+                            <TextBlock Text="선취점" FontSize="10" FontWeight="Bold" HorizontalAlignment="Center"/>
+                            <TextBlock x:Name="blueTeamFirsts" Text="{Binding DataContext.blueTeam.FirstBlood, ElementName=playerDetailsGrid  , Converter= {StaticResource firstBloodConvert}}"
+                                       FontSize="10" FontWeight="Bold" HorizontalAlignment="Center" Foreground="Green" Margin="0 , 2 , 0 , 0"/>
+                        </StackPanel>
+                    </Grid>
+
+                </Border>
+
+                <!-- 팀원 정보  (블루팀) -->
+                <ListBox x:Name="blueTeamPlayers" ItemsSource="{Binding BluePart}"  Margin="10,0,10,5"
+                     HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                    <!-- 중앙 정렬 -->
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="ListBoxItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                            <Setter Property="VerticalContentAlignment" Value="Center"/>
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+
+                    <ItemsControl.ItemTemplate >
+                        <DataTemplate>
+                            <Border  VerticalAlignment="Center"  Margin="2" Background="#E6F3FF" x:Name="playerBorder">
+                                <StackPanel Margin="5">
+                                    <!-- 기본 정보 -->
+                                    <Grid Height="35" Width="920" VerticalAlignment="Center">
+
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="0.7*"/>
+                                            <ColumnDefinition Width="3*"/>
+                                            <ColumnDefinition Width="3*"/>
+                                            <ColumnDefinition Width="3*"/>
+                                            <ColumnDefinition Width="3.5*"/>
+                                            <ColumnDefinition Width="4*"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <!-- 챔피언 이미지 -->
+                                        <Image Source="{Binding championImg  }" Width="28" Height="28" Grid.Column="0"/>
+
+                                        <!-- 소환사 이름 및 챔피언이름 -->
+                                        <StackPanel Grid.Column="1" Margin="0 , 4 , 0 , 0" HorizontalAlignment="Left">
+                                            <TextBlock Text="{Binding GameName}" FontWeight="Bold" FontSize="11" />
+                                            <TextBlock Text="{Binding championName}" FontSize="9" Foreground="Gray"/>
+                                        </StackPanel>
+
+                                        <!-- KDA -->
+                                        <StackPanel Grid.Column="2" Margin="20 , 4 , 0 , 0" HorizontalAlignment="Center">
+                                            <TextBlock Text="{Binding kda}"  VerticalAlignment="Center" TextAlignment="Center" FontSize="11" Foreground="{Binding kda, Converter={StaticResource kdaConvert}}"/>
+                                            <TextBlock Text="{Binding K_D_A}"  VerticalAlignment="Center" TextAlignment="Center" FontSize="13" FontWeight="Bold"/>
+                                        </StackPanel>
+
+                                        <!-- 미니언 -->
+                                        <TextBlock Text="{Binding totalMinionsKilled}" Grid.Column="3" VerticalAlignment="Center" TextAlignment="Center" FontSize="14" Margin="20 , 0 , 0 , 0"/>
+                                        <!-- 골드량 -->
+                                        <TextBlock Text="{Binding goldEarned}" Grid.Column="4" VerticalAlignment="Center" TextAlignment="Center" FontSize="12" FontWeight="Bold" Margin="20 , 0 , 0 , 0"/>
+
+                                        <!-- 아이템 이미지 -->
+                                        <Border  Grid.Column="5" VerticalAlignment="Center" Margin="20 , 0 , 0 , 0" BorderBrush="Gray" BorderThickness="2">
+                                            <Grid >
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition/>
+                                                    <ColumnDefinition/>
+                                                    <ColumnDefinition/>
+                                                    <ColumnDefinition/>
+                                                    <ColumnDefinition/>
+                                                    <ColumnDefinition/>
+                                                    <ColumnDefinition/>
+                                                </Grid.ColumnDefinitions>
+
+                                                <Image Source="{Binding item0_Img}" Width="25" Height="25" Margin="1" Grid.Column="0"/>
+                                                <Image Source="{Binding item1_Img}" Width="25" Height="25" Margin="1" Grid.Column="1"/>
+                                                <Image Source="{Binding item2_Img}" Width="25" Height="25" Margin="1" Grid.Column="2"/>
+                                                <Image Source="{Binding item3_Img}" Width="25" Height="25" Margin="1" Grid.Column="3"/>
+                                                <Image Source="{Binding item4_Img}" Width="25" Height="25" Margin="1" Grid.Column="4"/>
+                                                <Image Source="{Binding item5_Img}" Width="25" Height="25" Margin="1" Grid.Column="5"/>
+                                                <Image Source="{Binding item6_Img}" Width="25" Height="25" Margin="1" Grid.Column="6"/>
+                                            </Grid>
+
+                                        </Border>
+                                    </Grid>
+
+                                    <!-- 피해량 정보 -->
+                                    <Grid Margin="0,5,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <!-- 가한 피해량 -->
+                                        <StackPanel Grid.Column="0" Margin="0,0,10,0">
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                </Grid.ColumnDefinitions>
+                                                <TextBlock Text="가한피해" FontSize="9" Foreground="Gray" Grid.Column="0"/>
+                                                <TextBlock Text="{Binding totalDamageDealtToChampions}" FontSize="9" FontWeight="Bold" Grid.Column="2" HorizontalAlignment="Right"/>
+                                            </Grid>
+
+                                            <ProgressBar Name="DamageDealtProgressBar" Height="6" Margin="0,2,0,0"
+                                                         Background="LightGray" Foreground="#FF4169E1"
+                                                         Minimum="0"
+                                                         Maximum="{Binding DataContext.participants, ElementName=blueTeamPlayers , Converter={StaticResource damageConvert } }"
+                                                         Value="{Binding _totalDamageDealtToChampions }"/>
+
+                                        </StackPanel>
+
+                                        <!-- 받은 피해량 -->
+                                        <StackPanel Grid.Column="1" Margin="10,0,0,0">
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                </Grid.ColumnDefinitions>
+                                                <TextBlock Text="받은피해" FontSize="9" Foreground="Gray" Grid.Column="0"/>
+                                                <TextBlock Text="{Binding totalDamageTaken}" FontSize="9" FontWeight="Bold" Grid.Column="2" HorizontalAlignment="Right"/>
+                                            </Grid>
+                                            <ProgressBar Name="DamageTakenProgressBar" Height="6" Margin="0,2,0,0"
+                                                         Background="LightGray" Foreground="#FFDC143C"
+                                                         Minimum="0"
+                                                         Maximum="{Binding DataContext.participants, ElementName=blueTeamPlayers , Converter={StaticResource takenConvert }  }"
+                                                         Value="{Binding _totalDamageTaken }"/>
+                                        </StackPanel>
+                                    </Grid>
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ListBox>
+
+                <!-- 승패 및 팀별 오브젝트 정보 -->
+                <Border Background="#E8E8E8" Margin="10,5" Padding="10" BorderBrush="Gray" BorderThickness="1">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!-- 블루팀 오브젝트 정보 (여러 줄로 정렬) -->
+                        <Border Grid.Column="0" Background="#E6F3FF" Padding="10" BorderBrush="Blue" BorderThickness="1" CornerRadius="5">
+                            <StackPanel HorizontalAlignment="Center">
+                                <TextBlock Text="블루팀" FontSize="14" FontWeight="Bold" Foreground="Blue" HorizontalAlignment="Center" Margin="0,0,0,8"/>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+
+                                    <TextBlock Text="드래곤:" FontSize="11" Grid.Row="0" Grid.Column="0" Margin="0,0,5,3"/>
+                                    <TextBlock Text="{Binding blueTeam.dragon}" FontSize="11" FontWeight="Bold" Grid.Row="0" Grid.Column="1" Margin="0,0,10,3"/>
+                                    <TextBlock Text="바론:" FontSize="11" Grid.Row="0" Grid.Column="2" Margin="0,0,5,3"/>
+                                    <TextBlock Text="{Binding blueTeam.baron}" FontSize="11" FontWeight="Bold" Grid.Row="0" Grid.Column="3" Margin="0,0,0,3"/>
+
+                                    <TextBlock Text="타워:" FontSize="11" Grid.Row="1" Grid.Column="0" Margin="0,0,5,0"/>
+                                    <TextBlock Text="{Binding blueTeam.tower}" FontSize="11" FontWeight="Bold" Grid.Row="1" Grid.Column="1" Margin="0,0,10,0"/>
+                                    <TextBlock Text="억제기:" FontSize="11" Grid.Row="1" Grid.Column="2" Margin="0,0,5,0"/>
+                                    <TextBlock Text="{Binding blueTeam.inhibitor}" FontSize="11" FontWeight="Bold" Grid.Row="1" Grid.Column="3"/>
+                                </Grid>
+                            </StackPanel>
+                        </Border>
+
+                        <!-- 중앙 승패 정보 (승패 상태와 색깔로 명확하게 표시) -->
+                        <Border Grid.Column="1" x:Name="victoryTeamBorder" Background="White" BorderBrush="Gray" BorderThickness="2" CornerRadius="10" Padding="15">
+                            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <TextBlock Text="경기 결과" FontWeight="Bold" FontSize="12" HorizontalAlignment="Center" Foreground="Gray" Margin="0,0,0,5"/>
+                                <TextBlock x:Name="victoryTeamText" Text="승리팀" FontWeight="Bold" FontSize="18" HorizontalAlignment="Center"/>
+                                <TextBlock x:Name="victoryDetails" Text="{Binding . , Converter ={StaticResource lastConvert}}" FontSize="10" HorizontalAlignment="Center" Foreground="Gray" Margin="0,5,0,0"/>
+                            </StackPanel>
+                        </Border>
+
+                        <!-- 레드팀 오브젝트 정보 (여러 줄로 정렬) -->
+                        <Border Grid.Column="2" Background="#FFE6E6" Padding="10" BorderBrush="Red" BorderThickness="1" CornerRadius="5">
+                            <StackPanel HorizontalAlignment="Center">
+                                <TextBlock Text="레드팀" FontSize="14" FontWeight="Bold" Foreground="Red" HorizontalAlignment="Center" Margin="0,0,0,8"/>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+
+                                    <TextBlock Text="드래곤:" FontSize="11" Grid.Row="0" Grid.Column="0" Margin="0,0,5,3"/>
+                                    <TextBlock Text="{Binding redTeam.dragon}" FontSize="11" FontWeight="Bold" Grid.Row="0" Grid.Column="1" Margin="0,0,10,3"/>
+                                    <TextBlock Text="바론:" FontSize="11" Grid.Row="0" Grid.Column="2" Margin="0,0,5,3"/>
+                                    <TextBlock Text="{Binding redTeam.baron}" FontSize="11" FontWeight="Bold" Grid.Row="0" Grid.Column="3" Margin="0,0,0,3"/>
+
+                                    <TextBlock Text="타워:" FontSize="11" Grid.Row="1" Grid.Column="0" Margin="0,0,5,0"/>
+                                    <TextBlock Text="{Binding redTeam.tower}" FontSize="11" FontWeight="Bold" Grid.Row="1" Grid.Column="1" Margin="0,0,10,0"/>
+                                    <TextBlock Text="억제기:" FontSize="11" Grid.Row="1" Grid.Column="2" Margin="0,0,5,0"/>
+                                    <TextBlock Text="{Binding redTeam.inhibitor}" FontSize="11" FontWeight="Bold" Grid.Row="1" Grid.Column="3"/>
+                                </Grid>
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+                </Border>
+
+                <!-- 레드팀 총합 통계 -->
+                <Border Background="#FFE6E6" Margin="10,10,10,5" Padding="5" BorderBrush="Red" BorderThickness="1">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0" HorizontalAlignment="Center">
+                            <TextBlock Text="팀 킬" FontSize="10" FontWeight="Bold"/>
+                            <TextBlock x:Name="redTeamKills" Text="{Binding blueTeam.champion}" FontSize="14" FontWeight="Bold" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" HorizontalAlignment="Center">
+                            <TextBlock Text="팀 데스" FontSize="10" FontWeight="Bold"/>
+                            <TextBlock x:Name="redTeamDeaths" Text="{Binding redTeam.champion}" FontSize="14" FontWeight="Bold" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="2" HorizontalAlignment="Center">
+                            <TextBlock Text="팀 어시스트" FontSize="10" FontWeight="Bold"/>
+                            <TextBlock x:Name="redTeamAssists" Text="{Binding ., Converter={StaticResource teamAssistsConverter}, ConverterParameter=블루팀}" FontSize="14" FontWeight="Bold" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="3" HorizontalAlignment="Center" >
+                            <TextBlock Text="선취점" FontSize="10" FontWeight="Bold" HorizontalAlignment="Center"/>
+                            <TextBlock x:Name="redTeamFirsts" Text="{Binding  DataContext.redTeam.FirstBlood, ElementName=playerDetailsGrid  , Converter= {StaticResource firstBloodConvert}}"
+                                       FontSize="10" FontWeight="Bold" HorizontalAlignment="Center" Foreground="Green" Margin="0 , 2 , 0 , 0"/>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+
+                <!-- 팀원 정보  (레드팀) -->
+                <ListBox x:Name="redTeamPlayers" ItemsSource="{Binding RedPart}"  Margin="10,0,10,5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                    <!-- 중앙 정렬 -->
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="ListBoxItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                            <Setter Property="VerticalContentAlignment" Value="Center"/>
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+
+                    <ItemsControl.ItemTemplate >
+                        <DataTemplate>
+                            <Border  VerticalAlignment="Center"  Margin="2" Background="#FFF0C0C8" x:Name="playerBorder" >
+                                <StackPanel Margin="5">
+                                    <!-- 기본 정보 -->
+                                    <Grid Height="35" Width="920" VerticalAlignment="Center">
+
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="0.7*"/>
+                                            <ColumnDefinition Width="3*"/>
+                                            <ColumnDefinition Width="3*"/>
+                                            <ColumnDefinition Width="3*"/>
+                                            <ColumnDefinition Width="3.5*"/>
+                                            <ColumnDefinition Width="4*"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <!-- 챔피언 이미지 -->
+                                        <Image Source="{Binding championImg  }" Width="28" Height="28" Grid.Column="0"/>
+
+                                        <!-- 소환사 이름 및 챔피언이름 -->
+                                        <StackPanel Grid.Column="1" Margin="0 , 4 , 0 , 0" HorizontalAlignment="Left">
+                                            <TextBlock Text="{Binding GameName}" FontWeight="Bold" FontSize="11" />
+                                            <TextBlock Text="{Binding championName}" FontSize="9" Foreground="Gray"/>
+                                        </StackPanel>
+
+                                        <!-- KDA -->
+                                        <StackPanel Grid.Column="2" Margin="20 , 4 , 0 , 0" HorizontalAlignment="Center">
+                                            <TextBlock Text="{Binding kda}"  VerticalAlignment="Center" TextAlignment="Center" FontSize="11" Foreground="{Binding kda, Converter={StaticResource kdaConvert}}"/>
+                                            <TextBlock Text="{Binding K_D_A}"  VerticalAlignment="Center" TextAlignment="Center" FontSize="13" FontWeight="Bold"/>
+                                        </StackPanel>
+
+                                        <!-- 미니언 -->
+                                        <TextBlock Text="{Binding totalMinionsKilled}" Grid.Column="3" VerticalAlignment="Center" TextAlignment="Center" FontSize="14" Margin="20 , 0 , 0 , 0"/>
+                                        <!-- 골드량 -->
+                                        <TextBlock Text="{Binding goldEarned}" Grid.Column="4" VerticalAlignment="Center" TextAlignment="Center" FontSize="12" FontWeight="Bold" Margin="20 , 0 , 0 , 0"/>
+
+                                        <!-- 아이템 이미지 -->
+                                        <Border  Grid.Column="5" VerticalAlignment="Center" Margin="20 , 0 , 0 , 0" BorderBrush="Gray" BorderThickness="2">
+                                            <Grid >
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition/>
+                                                    <ColumnDefinition/>
+                                                    <ColumnDefinition/>
+                                                    <ColumnDefinition/>
+                                                    <ColumnDefinition/>
+                                                    <ColumnDefinition/>
+                                                    <ColumnDefinition/>
+                                                </Grid.ColumnDefinitions>
+
+                                                <Image Source="{Binding item0_Img}" Width="25" Height="25" Margin="1" Grid.Column="0"/>
+                                                <Image Source="{Binding item1_Img}" Width="25" Height="25" Margin="1" Grid.Column="1"/>
+                                                <Image Source="{Binding item2_Img}" Width="25" Height="25" Margin="1" Grid.Column="2"/>
+                                                <Image Source="{Binding item3_Img}" Width="25" Height="25" Margin="1" Grid.Column="3"/>
+                                                <Image Source="{Binding item4_Img}" Width="25" Height="25" Margin="1" Grid.Column="4"/>
+                                                <Image Source="{Binding item5_Img}" Width="25" Height="25" Margin="1" Grid.Column="5"/>
+                                                <Image Source="{Binding item6_Img}" Width="25" Height="25" Margin="1" Grid.Column="6"/>
+                                            </Grid>
+
+                                        </Border>
+                                    </Grid>
+
+                                    <!-- 피해량 정보 -->
+                                    <Grid Margin="0,5,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <!-- 가한 피해량 -->
+                                        <StackPanel Grid.Column="0" Margin="0,0,10,0">
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                </Grid.ColumnDefinitions>
+                                                <TextBlock Text="가한피해" FontSize="9" Foreground="Gray" Grid.Column="0"/>
+                                                <TextBlock Text="{Binding totalDamageDealtToChampions}" FontSize="9" FontWeight="Bold" Grid.Column="2" HorizontalAlignment="Right"/>
+                                            </Grid>
+
+                                            <ProgressBar Name="DamageDealtProgressBar" Height="6" Margin="0,2,0,0"
+                                                         Background="LightGray" Foreground="#FF4169E1"
+                                                         Minimum="0"
+                                                         Maximum="{Binding DataContext.participants, ElementName=blueTeamPlayers , Converter={StaticResource damageConvert } }"
+                                                         Value="{Binding _totalDamageDealtToChampions }"/>
+                                        </StackPanel>
+
+                                        <!-- 받은 피해량 -->
+                                        <StackPanel Grid.Column="1" Margin="10,0,0,0">
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                </Grid.ColumnDefinitions>
+                                                <TextBlock Text="받은피해" FontSize="9" Foreground="Gray" Grid.Column="0"/>
+                                                <TextBlock Text="{Binding totalDamageTaken}" FontSize="9" FontWeight="Bold" Grid.Column="2" HorizontalAlignment="Right"/>
+                                            </Grid>
+                                            <ProgressBar Name="DamageTakenProgressBar" Height="6" Margin="0,2,0,0"
+                                                         Background="LightGray" Foreground="#FFDC143C"
+                                                         Minimum="0"
+                                                         Maximum="{Binding DataContext.participants, ElementName=redTeamPlayers , Converter={StaticResource takenConvert }  }"
+                                                         Value="{Binding _totalDamageTaken }"/>
+                                        </StackPanel>
+                                    </Grid>
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ListBox>
+            </StackPanel>
+        </ScrollViewer>
+    </Border>
+</UserControl>

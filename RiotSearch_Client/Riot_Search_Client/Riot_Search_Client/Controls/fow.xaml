@@ -1,0 +1,175 @@
+﻿<UserControl x:Class="Riot_Search_Client.Controls.fow"
+             xmlns:Controls="clr-namespace:Riot_Search_Client.Controls"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Riot_Search_Client.Converts"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="1034">
+    <UserControl.Resources>
+        <local:KdaConvert x:Key="kdaConvert"/>
+        <local:TimeConvert x:Key="timeConvert"/>
+        <local:WinConvert x:Key="winConvert"/>
+        <local:WinToStringConvert x:Key="winToStringConvert"/>
+        <local:ChampLevelConverter x:Key="champLevelConverter"/>
+    </UserControl.Resources>
+    <StackPanel>
+        <StackPanel Background="{Binding MyPart.win , Converter={StaticResource winConvert}}" Width="Auto" Height="64" VerticalAlignment="Stretch">
+            <Grid ShowGridLines="false" Height="64">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="70"/>
+                    <ColumnDefinition Width="64"/>
+                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="105"/>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <!-- 챔피언 이미지 -->
+                <Border BorderThickness="2" BorderBrush="LightGray" Grid.Column="0">
+                    <Image Source="{Binding MyPart.championImg}" ToolTip="{Binding MyPart.championName}"/>
+                </Border>
+
+                <!-- 승리 여부 , 게임 모드-->
+                <Border BorderThickness="0 , 2 , 2 , 2" BorderBrush="LightGray" Grid.Column="1">
+                    <Grid Margin="0 , 10 , 0 , 10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="{Binding MyPart.win, Converter={StaticResource winToStringConvert}}" FontSize="11" Grid.Row="0"   TextAlignment="Center"  VerticalAlignment="Center"  FontWeight="Bold"/>
+                        <TextBlock Text="{Binding queueId}"   FontSize="11" Grid.Row="1"    TextAlignment="Center"  VerticalAlignment="Center"/>
+                    </Grid>
+                </Border>
+
+                <!-- KDA-->
+                <Border BorderThickness="0 , 2 , 2 , 2" BorderBrush="LightGray"  Grid.Column="2">
+                    <Grid Margin="3 , 10 , 3, 10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Text="{Binding MyPart.kda}" Grid.Row="0"  FontSize="14" TextAlignment="Center"  FontWeight="Bold" Foreground="{Binding MyPart.kda , Converter= {StaticResource kdaConvert}}"/>
+                        <TextBlock Text="{Binding MyPart.K_D_A}" Grid.Row="1" FontSize="14" TextAlignment="Center"/>
+                    </Grid>
+                </Border>
+
+                <!-- 킬 관여율 -->
+                <Border BorderThickness="0 , 2 , 2 , 2" BorderBrush="LightGray" Grid.Column="3">
+                    <TextBlock Text="{Binding MyPart.killPercent}" TextAlignment="Center"  VerticalAlignment="Center" FontSize="14"
+                       ToolTip=" 킬 관여율"/>
+                </Border>
+
+                <!-- 스펠 룬 -->
+                <Border BorderThickness="0 , 2 , 2 , 2" BorderBrush="LightGray" Grid.Column="4"  >
+                    <Grid Margin="3 , 6 , 3 , 6">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <Image Source="{Binding MyPart.summoner1Id_Img}" Stretch="Uniform" Grid.Column="0" Grid.Row="0"/>
+                        <Image Source="{Binding MyPart.summoner2Id_Img}" Stretch="Uniform" Grid.Column="0" Grid.Row="1"/>
+
+                        <Image Source="{Binding MyPart.primaryRune_Img}" Stretch="Uniform"  Grid.Column="1" Grid.Row="0"  Margin="1"/>
+                        <Image Source="{Binding MyPart.subRune_Img}"     Stretch="Uniform"  Grid.Column="1" Grid.Row="1"  Margin="1"/>
+                    </Grid>
+                </Border>
+
+                <!-- 챔피언 초상화 -->
+                <Border BorderThickness="0 , 2 , 2 , 2" BorderBrush="LightGray" Grid.Column="5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <Image Source="{Binding participants[0].championImg}" Grid.Column="0" Grid.Row="0"/>
+                        <Image Source="{Binding participants[1].championImg}" Grid.Column="1" Grid.Row="0"/>
+                        <Image Source="{Binding participants[2].championImg}" Grid.Column="2" Grid.Row="0"/>
+                        <Image Source="{Binding participants[3].championImg}" Grid.Column="3" Grid.Row="0"/>
+                        <Image Source="{Binding participants[4].championImg}" Grid.Column="4" Grid.Row="0"/>
+                        <Image Source="{Binding participants[5].championImg}" Grid.Column="0" Grid.Row="1"/>
+                        <Image Source="{Binding participants[6].championImg}" Grid.Column="1" Grid.Row="1"/>
+                        <Image Source="{Binding participants[7].championImg}" Grid.Column="2" Grid.Row="1"/>
+                        <Image Source="{Binding participants[8].championImg}" Grid.Column="3" Grid.Row="1"/>
+                        <Image Source="{Binding participants[9].championImg}" Grid.Column="4" Grid.Row="1"/>
+                    </Grid>
+                </Border>
+
+                <!-- 아이템 -->
+                <Border BorderThickness="0 , 2 , 2 , 2" BorderBrush="LightGray" Grid.Column="6">
+                    <Grid Margin="3 , 6 , 3 , 6">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <Image Source="{Binding MyPart.item0_Img}" Grid.Column="0" Grid.Row="0"/>
+                        <Image Source="{Binding MyPart.item1_Img}" Grid.Column="1" Grid.Row="0"/>
+                        <Image Source="{Binding MyPart.item2_Img}" Grid.Column="2" Grid.Row="0"/>
+                        <Image Source="{Binding MyPart.item6_Img}" Grid.Column="3" Grid.Row="0"/>
+                        <Image Source="{Binding MyPart.item3_Img}" Grid.Column="0" Grid.Row="1"/>
+                        <Image Source="{Binding MyPart.item4_Img}" Grid.Column="1" Grid.Row="1"/>
+                        <Image Source="{Binding MyPart.item5_Img}" Grid.Column="2" Grid.Row="1"/>
+                    </Grid>
+                </Border>
+
+                <!-- CS , 골드량 -->
+                <Border BorderThickness="0 , 2 , 2 , 2" BorderBrush="LightGray" Grid.Column="7">
+                    <Grid Margin="3 , 10 , 3 , 10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Text="{Binding MyPart.totalMinionsKilled}" Grid.Row="0" FontSize="12" TextAlignment="Center" FontWeight="Bold"/>
+                        <TextBlock Text="{Binding MyPart.goldEarned}" Grid.Row="1" FontSize="10" TextAlignment="Center"/>
+                    </Grid>
+                </Border>
+
+                <!-- 챔피언 레벨 -->
+                <Border BorderThickness="0 , 2 , 2 , 2" BorderBrush="LightGray" Grid.Column="8">
+                    <TextBlock Text="{Binding MyPart.champLevel, Converter={StaticResource champLevelConverter}}" TextAlignment="Center"  VerticalAlignment="Center" FontSize="12" ToolTip="챔피언 레벨"/>
+                </Border>
+
+                <!-- 현재날짜에서 얼마나 됐는지 -->
+                <Border BorderThickness="0 , 2 , 2 , 2" BorderBrush="LightGray" Grid.Column="9">
+                    <TextBlock Text="{Binding gameEndTimestamp, Converter={StaticResource timeConvert}}" TextAlignment="Center"  VerticalAlignment="Center" Margin="5"/>
+                </Border>
+
+                <!-- 추가 정보 버튼 -->
+                <Border BorderThickness="0 , 2 , 2 , 2" BorderBrush="LightGray" Grid.Column="10">
+                    <Button x:Name="btnDetails" Content="추가정보" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" 
+                            VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5"
+                            Click="BtnDetails_Click"  Background="Transparent" BorderThickness="0" FontSize="11"/>
+                </Border>
+            </Grid>
+        </StackPanel>
+        <Controls:fow_info x:Name="fowinfo" Height="auto" Visibility="Collapsed" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+    </StackPanel>
+</UserControl>

@@ -1,0 +1,171 @@
+C:\Users\bit\Desktop\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Search_Client.exe.config
+C:\Users\bit\Desktop\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Search_Client.exe
+C:\Users\bit\Desktop\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Search_Client.pdb
+C:\Users\bit\Desktop\Riot_Search_Client\Riot_Search_Client\bin\Debug\Newtonsoft.Json.dll
+C:\Users\bit\Desktop\Riot_Search_Client\Riot_Search_Client\bin\Debug\Newtonsoft.Json.xml
+C:\Users\bit\Desktop\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.csproj.AssemblyReference.cache
+C:\Users\bit\Desktop\Riot_Search_Client\Riot_Search_Client\obj\Debug\Controls\fow.g.cs
+C:\Users\bit\Desktop\Riot_Search_Client\Riot_Search_Client\obj\Debug\Controls\fow_info.g.cs
+C:\Users\bit\Desktop\Riot_Search_Client\Riot_Search_Client\obj\Debug\Views\MainWindow.g.cs
+C:\Users\bit\Desktop\Riot_Search_Client\Riot_Search_Client\obj\Debug\Views\App.g.cs
+C:\Users\bit\Desktop\Riot_Search_Client\Riot_Search_Client\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\bit\Desktop\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client_MarkupCompile.cache
+C:\Users\bit\Desktop\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client_MarkupCompile.lref
+C:\Users\bit\Desktop\Riot_Search_Client\Riot_Search_Client\obj\Debug\Controls\fow.baml
+C:\Users\bit\Desktop\Riot_Search_Client\Riot_Search_Client\obj\Debug\Controls\fow_info.baml
+C:\Users\bit\Desktop\Riot_Search_Client\Riot_Search_Client\obj\Debug\Views\MainWindow.baml
+C:\Users\bit\Desktop\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.g.resources
+C:\Users\bit\Desktop\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.Properties.Resources.resources
+C:\Users\bit\Desktop\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.csproj.GenerateResource.cache
+C:\Users\bit\Desktop\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.csproj.CoreCompileInputs.cache
+C:\Users\bit\Desktop\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Sea.F427227C.Up2Date
+C:\Users\bit\Desktop\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.exe
+C:\Users\bit\Desktop\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.pdb
+C:\Users\wjdrm\Desktop\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Search_Client.exe.config
+C:\Users\wjdrm\Desktop\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Search_Client.exe
+C:\Users\wjdrm\Desktop\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Search_Client.pdb
+C:\Users\wjdrm\Desktop\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Newtonsoft.Json.dll
+C:\Users\wjdrm\Desktop\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Newtonsoft.Json.xml
+C:\Users\wjdrm\Desktop\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.csproj.AssemblyReference.cache
+C:\Users\wjdrm\Desktop\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Controls\fow.g.cs
+C:\Users\wjdrm\Desktop\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Controls\fow_info.g.cs
+C:\Users\wjdrm\Desktop\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Views\MainWindow.g.cs
+C:\Users\wjdrm\Desktop\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Views\App.g.cs
+C:\Users\wjdrm\Desktop\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\wjdrm\Desktop\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client_MarkupCompile.cache
+C:\Users\wjdrm\Desktop\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client_MarkupCompile.lref
+C:\Users\wjdrm\Desktop\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Controls\fow.baml
+C:\Users\wjdrm\Desktop\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Controls\fow_info.baml
+C:\Users\wjdrm\Desktop\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Views\MainWindow.baml
+C:\Users\wjdrm\Desktop\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.g.resources
+C:\Users\wjdrm\Desktop\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.Properties.Resources.resources
+C:\Users\wjdrm\Desktop\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.csproj.GenerateResource.cache
+C:\Users\wjdrm\Desktop\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.csproj.CoreCompileInputs.cache
+C:\Users\wjdrm\Desktop\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Sea.F427227C.Up2Date
+C:\Users\wjdrm\Desktop\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.exe
+C:\Users\wjdrm\Desktop\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.pdb
+C:\Users\bit\Desktop\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Search_Client.exe.config
+C:\Users\bit\Desktop\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Search_Client.exe
+C:\Users\bit\Desktop\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Search_Client.pdb
+C:\Users\bit\Desktop\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Newtonsoft.Json.dll
+C:\Users\bit\Desktop\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Newtonsoft.Json.xml
+C:\Users\bit\Desktop\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.csproj.AssemblyReference.cache
+C:\Users\bit\Desktop\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Controls\fow.g.cs
+C:\Users\bit\Desktop\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Controls\fow_info.g.cs
+C:\Users\bit\Desktop\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Views\MainWindow.g.cs
+C:\Users\bit\Desktop\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Views\App.g.cs
+C:\Users\bit\Desktop\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\bit\Desktop\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client_MarkupCompile.cache
+C:\Users\bit\Desktop\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client_MarkupCompile.lref
+C:\Users\bit\Desktop\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Controls\fow.baml
+C:\Users\bit\Desktop\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Controls\fow_info.baml
+C:\Users\bit\Desktop\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Views\MainWindow.baml
+C:\Users\bit\Desktop\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.g.resources
+C:\Users\bit\Desktop\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.Properties.Resources.resources
+C:\Users\bit\Desktop\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.csproj.GenerateResource.cache
+C:\Users\bit\Desktop\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.csproj.CoreCompileInputs.cache
+C:\Users\bit\Desktop\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Sea.F427227C.Up2Date
+C:\Users\bit\Desktop\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.exe
+C:\Users\bit\Desktop\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.pdb
+C:\Users\bit\Desktop\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Match_DLL.dll
+C:\Users\bit\Desktop\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Match_DLL.pdb
+C:\Users\bit\Desktop\fff\(구)RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Search_Client.exe.config
+C:\Users\bit\Desktop\fff\(구)RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Search_Client.exe
+C:\Users\bit\Desktop\fff\(구)RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Search_Client.pdb
+C:\Users\bit\Desktop\fff\(구)RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Newtonsoft.Json.dll
+C:\Users\bit\Desktop\fff\(구)RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Match_DLL.dll
+C:\Users\bit\Desktop\fff\(구)RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Newtonsoft.Json.xml
+C:\Users\bit\Desktop\fff\(구)RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Match_DLL.pdb
+C:\Users\bit\Desktop\fff\(구)RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.csproj.AssemblyReference.cache
+C:\Users\bit\Desktop\fff\(구)RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Controls\fow.g.cs
+C:\Users\bit\Desktop\fff\(구)RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Controls\fow_info.g.cs
+C:\Users\bit\Desktop\fff\(구)RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Views\MainWindow.g.cs
+C:\Users\bit\Desktop\fff\(구)RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Views\App.g.cs
+C:\Users\bit\Desktop\fff\(구)RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\bit\Desktop\fff\(구)RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client_MarkupCompile.cache
+C:\Users\bit\Desktop\fff\(구)RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client_MarkupCompile.lref
+C:\Users\bit\Desktop\fff\(구)RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Controls\fow.baml
+C:\Users\bit\Desktop\fff\(구)RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Controls\fow_info.baml
+C:\Users\bit\Desktop\fff\(구)RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Views\MainWindow.baml
+C:\Users\bit\Desktop\fff\(구)RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.g.resources
+C:\Users\bit\Desktop\fff\(구)RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.Properties.Resources.resources
+C:\Users\bit\Desktop\fff\(구)RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.csproj.GenerateResource.cache
+C:\Users\bit\Desktop\fff\(구)RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.csproj.CoreCompileInputs.cache
+C:\Users\bit\Desktop\fff\(구)RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Sea.F427227C.Up2Date
+C:\Users\bit\Desktop\fff\(구)RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.exe
+C:\Users\bit\Desktop\fff\(구)RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.pdb
+C:\Users\wjdrm\Desktop\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Search_Client.exe.config
+C:\Users\wjdrm\Desktop\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Search_Client.exe
+C:\Users\wjdrm\Desktop\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Search_Client.pdb
+C:\Users\wjdrm\Desktop\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Newtonsoft.Json.dll
+C:\Users\wjdrm\Desktop\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Newtonsoft.Json.xml
+C:\Users\wjdrm\Desktop\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Match_DLL.pdb
+C:\Users\wjdrm\Desktop\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.csproj.AssemblyReference.cache
+C:\Users\wjdrm\Desktop\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Controls\fow.g.cs
+C:\Users\wjdrm\Desktop\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Controls\fow_info.g.cs
+C:\Users\wjdrm\Desktop\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Views\MainWindow.g.cs
+C:\Users\wjdrm\Desktop\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Views\App.g.cs
+C:\Users\wjdrm\Desktop\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\wjdrm\Desktop\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client_MarkupCompile.cache
+C:\Users\wjdrm\Desktop\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client_MarkupCompile.lref
+C:\Users\wjdrm\Desktop\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Controls\fow.baml
+C:\Users\wjdrm\Desktop\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Controls\fow_info.baml
+C:\Users\wjdrm\Desktop\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Views\MainWindow.baml
+C:\Users\wjdrm\Desktop\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.g.resources
+C:\Users\wjdrm\Desktop\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.Properties.Resources.resources
+C:\Users\wjdrm\Desktop\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.csproj.GenerateResource.cache
+C:\Users\wjdrm\Desktop\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.csproj.CoreCompileInputs.cache
+C:\Users\wjdrm\Desktop\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Sea.F427227C.Up2Date
+C:\Users\wjdrm\Desktop\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.exe
+C:\Users\wjdrm\Desktop\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.pdb
+C:\Users\wjdrm\Desktop\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Match_DLL.dll
+C:\Users\bit\Desktop\F\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Search_Client.exe.config
+C:\Users\bit\Desktop\F\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Search_Client.exe
+C:\Users\bit\Desktop\F\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Search_Client.pdb
+C:\Users\bit\Desktop\F\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Newtonsoft.Json.dll
+C:\Users\bit\Desktop\F\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Match_DLL.dll
+C:\Users\bit\Desktop\F\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Newtonsoft.Json.xml
+C:\Users\bit\Desktop\F\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Match_DLL.pdb
+C:\Users\bit\Desktop\F\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.csproj.AssemblyReference.cache
+C:\Users\bit\Desktop\F\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Controls\fow.g.cs
+C:\Users\bit\Desktop\F\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Controls\fow_info.g.cs
+C:\Users\bit\Desktop\F\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Views\MainWindow.g.cs
+C:\Users\bit\Desktop\F\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Views\App.g.cs
+C:\Users\bit\Desktop\F\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\bit\Desktop\F\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client_MarkupCompile.cache
+C:\Users\bit\Desktop\F\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client_MarkupCompile.lref
+C:\Users\bit\Desktop\F\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Controls\fow.baml
+C:\Users\bit\Desktop\F\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Controls\fow_info.baml
+C:\Users\bit\Desktop\F\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Views\MainWindow.baml
+C:\Users\bit\Desktop\F\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.g.resources
+C:\Users\bit\Desktop\F\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.Properties.Resources.resources
+C:\Users\bit\Desktop\F\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.csproj.GenerateResource.cache
+C:\Users\bit\Desktop\F\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.csproj.CoreCompileInputs.cache
+C:\Users\bit\Desktop\F\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Sea.F427227C.Up2Date
+C:\Users\bit\Desktop\F\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.exe
+C:\Users\bit\Desktop\F\0515\fff\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.pdb
+C:\Users\bit\Desktop\4조 RiotSearch\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Search_Client.exe.config
+C:\Users\bit\Desktop\4조 RiotSearch\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Search_Client.exe
+C:\Users\bit\Desktop\4조 RiotSearch\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Search_Client.pdb
+C:\Users\bit\Desktop\4조 RiotSearch\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Newtonsoft.Json.dll
+C:\Users\bit\Desktop\4조 RiotSearch\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Newtonsoft.Json.xml
+C:\Users\bit\Desktop\4조 RiotSearch\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Match_DLL.pdb
+C:\Users\bit\Desktop\4조 RiotSearch\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.csproj.AssemblyReference.cache
+C:\Users\bit\Desktop\4조 RiotSearch\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Controls\fow.g.cs
+C:\Users\bit\Desktop\4조 RiotSearch\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Controls\fow_info.g.cs
+C:\Users\bit\Desktop\4조 RiotSearch\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Views\MainWindow.g.cs
+C:\Users\bit\Desktop\4조 RiotSearch\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Views\App.g.cs
+C:\Users\bit\Desktop\4조 RiotSearch\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\bit\Desktop\4조 RiotSearch\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client_MarkupCompile.cache
+C:\Users\bit\Desktop\4조 RiotSearch\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client_MarkupCompile.lref
+C:\Users\bit\Desktop\4조 RiotSearch\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Controls\fow.baml
+C:\Users\bit\Desktop\4조 RiotSearch\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Controls\fow_info.baml
+C:\Users\bit\Desktop\4조 RiotSearch\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Views\MainWindow.baml
+C:\Users\bit\Desktop\4조 RiotSearch\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.g.resources
+C:\Users\bit\Desktop\4조 RiotSearch\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.Properties.Resources.resources
+C:\Users\bit\Desktop\4조 RiotSearch\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.csproj.GenerateResource.cache
+C:\Users\bit\Desktop\4조 RiotSearch\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.csproj.CoreCompileInputs.cache
+C:\Users\bit\Desktop\4조 RiotSearch\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Sea.F427227C.Up2Date
+C:\Users\bit\Desktop\4조 RiotSearch\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.exe
+C:\Users\bit\Desktop\4조 RiotSearch\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\obj\Debug\Riot_Search_Client.pdb
+C:\Users\bit\Desktop\4조 RiotSearch\RiotSearch_Client\Riot_Search_Client\Riot_Search_Client\bin\Debug\Riot_Match_DLL.dll
